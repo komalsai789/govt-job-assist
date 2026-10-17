@@ -1,0 +1,24 @@
+{
+  "name": "niyuktiai-runner",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Drives a real browser on the candidate's machine for the Live Working tab. Never submits.",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "start": "npm run build && node dist/server.js",
+    "dev": "npm run build && node --watch dist/server.js",
+    "typecheck": "tsc --noEmit",
+    "selftest": "node test/selftest.mjs",
+    "test": "npm run build && node test/portal.test.mjs && node test/pickoption.test.mjs && node test/custom.test.mjs && node test/newtab.test.mjs && node test/applicant.test.mjs"
+  },
+  "dependencies": {
+    "playwright": "1.62.1",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/ws": "^8.5.13",
+    "typescript": "^5.7.0"
+  }
+}

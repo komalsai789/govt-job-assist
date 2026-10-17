@@ -1,0 +1,34 @@
+# --- API -------------------------------------------------------------------
+fastapi>=0.115
+uvicorn[standard]>=0.32
+python-multipart>=0.0.12
+pydantic>=2.9
+
+# --- Document ingest -------------------------------------------------------
+# PyMuPDF gives us the PDF text layer (exact, no OCR) and page rasterisation.
+pymupdf>=1.24
+pillow>=10.4
+
+# --- Image preprocessing ---------------------------------------------------
+numpy>=1.26
+opencv-python-headless>=4.10,<5  # 5.x dropped CascadeClassifier (face check)
+# rapidocr-onnxruntime pulls opencv-python (non-headless) itself; without this
+# pin the resolver installs 5.0, which then shadows the headless 4.x above.
+opencv-python>=4.10,<5
+
+# --- OCR -------------------------------------------------------------------
+# ONNX runtime based: pip-installable, ships its own models, needs no system
+# binary (unlike Tesseract). Swappable via OCR_ENGINE in config.
+rapidocr-onnxruntime>=1.3
+
+# --- Matching and dates ----------------------------------------------------
+rapidfuzz>=3.9
+python-dateutil>=2.9
+
+# --- Job boards (scanner) ---------------------------------------------------
+beautifulsoup4>=4.12
+anyio>=4.4
+
+# --- Tests -----------------------------------------------------------------
+pytest>=8.3
+httpx>=0.27

@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Complete your profile · NiyuktiAI</title>
+    <meta name="description" content="Set up the reusable profile NiyuktiAI uses to fill government applications." />
+    <link rel="icon" href="assets/img/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/vendor/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/tokens.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/components.css" />
+    <link rel="stylesheet" href="assets/css/shell.css" />
+    <link rel="stylesheet" href="assets/css/pages.css" />
+  </head>
+
+  <body>
+    <div class="onboard-shell">
+      <header class="onboard-head">
+        <a class="logo" href="index.html" aria-label="NiyuktiAI">
+          <svg class="logo-mark" viewBox="0 0 32 32" fill="none" role="img" aria-label="NiyuktiAI">
+            <defs>
+              <linearGradient id="niyukti-mark" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+                <stop stop-color="var(--brand-500)" />
+                <stop offset="1" stop-color="var(--brand-700)" />
+              </linearGradient>
+            </defs>
+            <rect width="32" height="32" rx="9" fill="url(#niyukti-mark)" />
+            <path d="M10.5 22V10.8l11 10.4V10" stroke="white" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" />
+            <circle cx="21.5" cy="9.5" r="2.6" fill="white" fill-opacity="0.35" />
+          </svg>
+          <span class="logo-word">NiyuktiAI</span>
+        </a>
+        <a class="btn btn-ghost btn-sm" href="dashboard.html">Skip for now</a>
+      </header>
+
+      <main class="onboard-main" id="main-content">
+        <div class="onboard-progress">
+          <p class="text-muted-fg" style="margin: 0; font-size: var(--text-sm)">
+            Step <span data-step-n>1</span> of <span data-step-total>6</span>
+          </p>
+          <div class="progress progress-sm" style="margin-top: 0.5rem">
+            <div class="progress-bar" data-progress style="width: 16%"></div>
+          </div>
+          <ol class="stepper" data-stepper></ol>
+        </div>
+
+        <section class="card onboard-card">
+          <div class="card-body">
+            <h1 class="card-title" style="font-size: var(--text-xl)" data-step-title></h1>
+            <p class="card-subtitle" data-step-lede></p>
+
+            <form class="onboard-form" data-form novalidate></form>
+
+            <p class="text-danger-fg" data-error hidden style="margin: 1rem 0 0"></p>
+          </div>
+
+          <div class="onboard-actions">
+            <button class="btn btn-outline" type="button" data-back hidden>
+              <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+              Back
+            </button>
+            <button class="btn btn-primary" type="button" data-next>
+              Continue
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </button>
+          </div>
+        </section>
+
+        <p class="text-muted-fg onboard-note">
+          Nothing here is required to use the app — anything you skip, NiyuktiAI simply leaves blank
+          on a form for you to fill. You can change all of it later in Profile.
+        </p>
+      </main>
+    </div>
+
+    <script src="assets/vendor/bootstrap.bundle.min.js"></script>
+    <script type="module" src="assets/js/pages/onboarding.js"></script>
+  </body>
+</html>

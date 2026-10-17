@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Live Working · NiyuktiAI</title>
+    <meta name="description" content="NiyuktiAI finds government jobs you are eligible for and fills in their application forms." />
+    <link rel="icon" href="assets/img/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/vendor/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/tokens.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/components.css" />
+    <link rel="stylesheet" href="assets/css/shell.css" />
+    <link rel="stylesheet" href="assets/css/pages.css" />
+  </head>
+  <body>
+    <a class="visually-hidden-focusable skip-link" href="#main-content">Skip to content</a>
+
+    <div class="app-shell">
+    <aside class="rail" data-collapsed="false">
+      <div class="rail-head">
+        <a href="dashboard.html" aria-label="NiyuktiAI dashboard">
+          <span class="logo">
+            <svg class="logo-mark" viewBox="0 0 32 32" fill="none" role="img" aria-label="NiyuktiAI">
+              <defs>
+                <linearGradient id="niyukti-mark" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="var(--brand-500)" />
+                  <stop offset="1" stop-color="var(--brand-700)" />
+                </linearGradient>
+              </defs>
+              <rect width="32" height="32" rx="9" fill="url(#niyukti-mark)" />
+              <path d="M10.5 22V10.8l11 10.4V10" stroke="white" stroke-width="2.6"
+                    stroke-linecap="round" stroke-linejoin="round" />
+              <circle cx="21.5" cy="9.5" r="2.6" fill="white" fill-opacity="0.35" />
+            </svg>
+            <span class="logo-word rail-hide-collapsed">NiyuktiAI</span>
+          </span>
+          <p class="rail-tagline rail-hide-collapsed">AI-Powered Government<br />Job Application Assistant</p>
+        </a>
+        <button class="btn btn-ghost btn-icon btn-sm rail-hide-collapsed" data-rail-toggle
+                type="button" aria-label="Collapse sidebar">
+          <i class="fa-solid fa-angles-left" aria-hidden="true"></i>
+        </button>
+      </div>
+
+      <nav class="rail-nav scrollbar-slim" aria-label="Main">
+        <ul>
+          <li>
+            <a class="rail-link" href="dashboard.html">
+              <i class="fa-solid fa-table-cells-large" aria-hidden="true"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a class="rail-link" href="jobs.html">
+              <i class="fa-solid fa-briefcase" aria-hidden="true"></i>
+              <span>Latest Jobs</span>
+            </a>
+          </li>
+          <li>
+            <a class="rail-link" href="live.html" aria-current="page">
+              <i class="fa-solid fa-tower-broadcast" aria-hidden="true"></i>
+              <span>Live Working</span>
+            </a>
+          </li>
+          <li>
+            <a class="rail-link" href="assistant.html">
+              <i class="fa-solid fa-robot" aria-hidden="true"></i>
+              <span>AI Assistant</span>
+            </a>
+          </li>
+          <li>
+            <a class="rail-link" href="applications.html">
+              <i class="fa-solid fa-file-lines" aria-hidden="true"></i>
+              <span>My Applications</span>
+            </a>
+          </li>
+          <li>
+            <a class="rail-link" href="documents.html">
+              <i class="fa-solid fa-folder-open" aria-hidden="true"></i>
+              <span>My Documents</span>
+            </a>
+          </li>
+          <li>
+            <a class="rail-link" href="profile.html">
+              <i class="fa-solid fa-user" aria-hidden="true"></i>
+              <span>Profile</span>
+            </a>
+          </li>
+          <li>
+            <a class="rail-link" href="alerts.html">
+              <i class="fa-solid fa-bell" aria-hidden="true"></i>
+              <span>Alerts</span>
+            <span class="badge badge-danger rail-count" data-unread hidden>0</span>
+            </a>
+          </li>
+          <li>
+            <a class="rail-link" href="settings.html">
+              <i class="fa-solid fa-gear" aria-hidden="true"></i>
+              <span>Settings</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="rail-foot">
+        <button class="btn btn-ghost btn-icon rail-show-collapsed" data-rail-toggle
+                type="button" aria-label="Expand sidebar">
+          <i class="fa-solid fa-angles-right" aria-hidden="true"></i>
+        </button>
+        <a class="rail-link" href="settings.html">
+          <i class="fa-solid fa-life-ring" aria-hidden="true"></i>
+          <span>Help &amp; Support</span>
+        </a>
+        <div class="dropdown">
+          <button class="user-chip" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <span class="avatar" data-user-initial aria-hidden="true">?</span>
+            <span class="user-chip-text rail-hide-collapsed">
+              <span class="truncate" data-user-name>Signed in</span>
+              <span class="truncate text-muted-fg" data-user-email></span>
+            </span>
+            <i class="fa-solid fa-sort" aria-hidden="true"></i>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+            <li><a class="dropdown-item" href="settings.html">Settings</a></li>
+            <li><button class="dropdown-item" type="button" data-theme-toggle>Switch theme</button></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" href="/v1/auth/signout">Sign out</a></li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+
+      <div class="app-main-column">
+        <header class="topbar">
+          <button class="btn btn-ghost btn-icon d-lg-none" type="button"
+                  data-bs-toggle="offcanvas" data-bs-target="#mobile-rail" aria-label="Open menu">
+            <i class="fa-solid fa-bars" aria-hidden="true"></i>
+          </button>
+
+          <form class="topbar-search" role="search">
+            <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+            <input type="search" name="q" placeholder="Search jobs, documents, applications" aria-label="Search" />
+            <kbd>Ctrl K</kbd>
+          </form>
+
+          <div class="ms-auto d-flex align-items-center gap-2">
+            <button class="btn btn-ghost btn-icon" type="button" data-theme-toggle aria-label="Switch theme">
+              <i class="fa-solid fa-sun" aria-hidden="true"></i>
+            </button>
+            <a class="btn btn-ghost btn-icon position-relative" href="alerts.html" aria-label="Alerts">
+              <i class="fa-solid fa-bell" aria-hidden="true"></i>
+            </a>
+            <a class="btn btn-primary btn-sm" href="jobs.html">
+              <i class="fa-solid fa-briefcase" aria-hidden="true"></i>
+              Find a job
+            </a>
+          </div>
+        </header>
+
+        <main class="app-main" id="main-content">
+          <div class="app-container">
+            <div class="stack" style="gap: 1.25rem">
+              <header class="page-header">
+                <h1>Live Working</h1>
+                <p>
+                  The job&rsquo;s own portal, open right here. You drive it — register, log in, open
+                  the form — and NiyuktiAI fills what it knows the moment a form appears. Nothing is
+                  submitted and nothing is paid without you.
+                </p>
+              </header>
+
+              <p class="runner-banner" data-runner-banner hidden></p>
+
+              <!-- ============================================ nothing running -->
+              <section data-start-panel>
+                <div class="card">
+                  <div class="card-body">
+                    <div class="row-center" style="align-items: flex-start; gap: 1rem">
+                      <span class="live-band-icon" style="width: 3rem; height: 3rem">
+                        <i class="fa-solid fa-desktop" aria-hidden="true"></i>
+                      </span>
+                      <div style="min-width: 0; flex: 1 1 auto">
+                        <h2 class="card-title" style="font-size: var(--text-lg)">
+                          No application running right now
+                        </h2>
+                        <p class="card-subtitle">
+                          Pick a job in Latest Jobs and press <strong>View &amp; Apply</strong>. That
+                          job&rsquo;s official portal opens right here and you use it as you normally
+                          would — register, log in, open the form. Then press
+                          <strong>Apply my data</strong> and the form fills itself from your documents.
+                        </p>
+                        <a class="btn btn-primary" href="jobs.html" style="margin-top: 1rem">
+                          Find a job to apply for
+                          <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                      </div>
+                    </div>
+
+                    <div style="border-top: 1px solid var(--border); margin-top: 1.5rem; padding-top: 1.25rem">
+                      <p style="font-weight: 600; margin: 0">Practice run</p>
+                      <p class="card-subtitle" data-practice-note>
+                        Try the whole flow on the runner&rsquo;s own practice portal — login, OTP, form
+                        pages, documents, payment — with nothing leaving this computer.
+                      </p>
+                      <div class="row-center" style="gap: 0.75rem; margin-top: 1rem; flex-wrap: wrap">
+                        <button class="btn btn-outline" type="button" data-practice>
+                          <i class="fa-solid fa-play" aria-hidden="true"></i>
+                          Start a practice run
+                        </button>
+                        <a class="btn btn-ghost btn-sm" href="documents.html">Upload or confirm documents →</a>
+                      </div>
+                      <p class="text-danger-fg" style="margin: 0.75rem 0 0" data-start-error hidden></p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <!-- ================================================= a live run -->
+              <section hidden data-run>
+                <div class="card" style="padding: 1.25rem">
+                  <div class="row-center" style="justify-content: space-between; gap: 1rem; flex-wrap: wrap">
+                    <div style="min-width: 0">
+                      <div class="row-center" style="gap: 0.5rem">
+                        <h2 class="card-title" data-run-title>Working</h2>
+                        <span class="badge badge-success" data-run-status>
+                          <span class="live-dot"></span><span data-run-status-text>starting</span>
+                        </span>
+                      </div>
+                      <p class="card-subtitle" data-run-sub></p>
+                    </div>
+                    <div class="row-center" style="gap: 0.5rem">
+                      <button class="btn btn-outline" type="button" data-pause hidden>
+                        <i class="fa-solid fa-pause" aria-hidden="true"></i> Pause work
+                      </button>
+                      <button class="btn btn-danger" type="button" data-bs-toggle="modal"
+                              data-bs-target="#stop-confirm" data-stop-open>
+                        <i class="fa-solid fa-stop" aria-hidden="true"></i> Stop work
+                      </button>
+                      <button class="btn btn-outline" type="button" data-new-session hidden>New session</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="live-grid" data-live-grid>
+                  <div class="stack" style="gap: 1.25rem; min-width: 0">
+                    <div class="card portal-card">
+                      <div class="portal-bar">
+                        <span class="portal-lights" aria-hidden="true"><i></i><i></i><i></i></span>
+                        <span class="portal-url truncate" data-portal-url></span>
+                        <span class="portal-live" data-portal-live>Waiting for the first frame</span>
+                      </div>
+
+                      <div class="portal-toolbar">
+                        <button class="btn btn-primary btn-sm" type="button" data-fill-now>
+                          <i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i>
+                          Apply my data
+                        </button>
+                        <div class="mode-toggle" role="group" aria-label="How much NiyuktiAI does">
+                          <button type="button" data-mode="assist" aria-pressed="true">You drive</button>
+                          <button type="button" data-mode="auto" aria-pressed="false">Autopilot</button>
+                        </div>
+                        <span class="text-muted-fg portal-hint" data-mode-hint>
+                          You register and log in yourself. Once you are past the login, every form is
+                          filled as it opens — or whenever you press the button.
+                        </span>
+                        <button class="btn btn-ghost btn-sm" type="button" data-widen>
+                          <i class="fa-solid fa-up-right-and-down-left-from-center" aria-hidden="true"></i>
+                          <span>Widen the portal</span>
+                        </button>
+                      </div>
+
+                      <div class="portal-surface" data-portal-surface>
+                        <img class="is-blank" data-portal-image alt="The portal is opening" draggable="false" />
+                        <!-- Holds the keyboard so an Indic IME and a paste both work. -->
+                        <textarea class="portal-keys" data-portal-keys aria-label="Type on the portal"
+                                  autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
+                        <p class="portal-caption" data-portal-caption hidden></p>
+                      </div>
+
+                      <p class="portal-reason" data-run-reason hidden></p>
+                    </div>
+
+                    <section class="card" data-filled-card hidden>
+                      <div class="card-body">
+                        <h2 class="card-title" data-filled-title>What NiyuktiAI filled in</h2>
+                        <p class="card-subtitle">
+                          Check it against your documents before you submit anything. Anything it did
+                          not know is left blank for you.
+                        </p>
+                        <ul class="filled-list" data-filled></ul>
+                      </div>
+                    </section>
+
+                    <section class="card" data-downloads-card hidden>
+                      <div class="card-body">
+                        <h2 class="card-title">Files from the portal</h2>
+                        <ul class="download-list" data-downloads></ul>
+                      </div>
+                    </section>
+                  </div>
+
+                  <div class="stack" style="gap: 1.25rem; min-width: 0" data-side>
+                    <section class="card" data-learned-card hidden>
+                      <div class="card-body">
+                        <h2 class="card-title">Saved to your documents</h2>
+                        <p class="card-subtitle">
+                          Things this application asked for that your details did not have. They fill
+                          themselves on the next one.
+                        </p>
+                        <ul class="learned-list" data-learned></ul>
+                      </div>
+                    </section>
+
+                    <section class="card">
+                      <div class="card-body">
+                        <h2 class="card-title">Steps</h2>
+                        <ol class="step-timeline" data-steps>
+                          <li class="text-muted-fg">Starting…</li>
+                        </ol>
+                      </div>
+                    </section>
+
+                    <section class="card">
+                      <div class="card-body">
+                        <h2 class="card-title">Activity</h2>
+                        <ul class="activity-log" data-log>
+                          <li class="text-muted-fg">Nothing yet.</li>
+                        </ul>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </section>
+
+              <!-- ======================================== previous applications -->
+              <section class="card" data-history-card hidden>
+                <div class="card-body">
+                  <div class="section-head">
+                    <h2 class="card-title">Previous runs</h2>
+                  </div>
+                  <ul class="history-list" data-history></ul>
+                </div>
+              </section>
+            </div>
+
+            <!-- The runner asks; this is where it asks. -->
+            <div class="modal fade" id="question" tabindex="-1" aria-labelledby="question-title" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2 class="modal-title card-title" id="question-title">NiyuktiAI needs you</h2>
+                    <!-- A question you cannot close is a question you cannot
+                         walk away from — and Stop is behind this. -->
+                    <button class="btn-close" type="button" data-bs-dismiss="modal"
+                            aria-label="Close without answering"></button>
+                  </div>
+                  <div class="modal-body" data-question-body></div>
+                  <div class="modal-footer" data-question-actions></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal fade" id="stop-confirm" tabindex="-1" aria-labelledby="stop-title" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2 class="modal-title card-title" id="stop-title">Stop this session permanently?</h2>
+                  </div>
+                  <div class="modal-body">
+                    <p style="margin: 0">
+                      The portal browser closes and this session cannot be resumed. Whatever the portal
+                      has already saved stays saved on the portal; nothing else is submitted.
+                    </p>
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-outline" type="button" data-bs-dismiss="modal">Keep working</button>
+                    <button class="btn btn-danger" type="button" data-stop-confirm data-bs-dismiss="modal">
+                      <i class="fa-solid fa-stop" aria-hidden="true"></i> Stop permanently
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+
+    <nav class="mobile-nav" aria-label="Sections">
+      <a href="dashboard.html"><i class="fa-solid fa-table-cells-large" aria-hidden="true"></i><span>Home</span></a>
+      <a href="jobs.html"><i class="fa-solid fa-briefcase" aria-hidden="true"></i><span>Jobs</span></a>
+      <a href="live.html" aria-current="page"><i class="fa-solid fa-tower-broadcast" aria-hidden="true"></i><span>Live</span></a>
+      <a href="assistant.html"><i class="fa-solid fa-robot" aria-hidden="true"></i><span>Assistant</span></a>
+      <a href="applications.html"><i class="fa-solid fa-file-lines" aria-hidden="true"></i><span>Applications</span></a>
+    </nav>
+    </div>
+
+    <script src="assets/vendor/bootstrap.bundle.min.js"></script>
+    <script type="module" src="assets/js/core/ui.js"></script>
+    <script type="module" src="assets/js/pages/live.js"></script>
+  </body>
+</html>

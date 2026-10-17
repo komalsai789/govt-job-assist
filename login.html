@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sign in · NiyuktiAI</title>
+    <meta name="description" content="Sign in to NiyuktiAI with Google. Your documents live in your own private account." />
+    <link rel="icon" href="assets/img/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/vendor/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/tokens.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/components.css" />
+    <link rel="stylesheet" href="assets/css/shell.css" />
+    <link rel="stylesheet" href="assets/css/pages.css" />
+    <link rel="stylesheet" href="assets/css/landing.css" />
+  </head>
+
+  <body data-surface="public" class="grain bg-ink login-page">
+    <div class="backdrop" aria-hidden="true">
+      <span class="aurora aurora-a animate-aurora"></span>
+      <span class="aurora aurora-b animate-aurora-slow"></span>
+    </div>
+
+    <a class="login-back" href="index.html">
+      <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+      Back to the site
+    </a>
+
+    <main class="login-shell">
+      <!-- The case, on the left. -->
+      <section class="login-copy">
+        <h1 class="font-display animate-fade-up">
+          Stop typing the same twenty fields.
+          <span class="accent">Sign in once.</span>
+        </h1>
+        <p class="text-mute animate-fade-up login-lede">
+          One sign-in, and every government job form you open afterwards is filled from documents you
+          have already confirmed.
+        </p>
+
+        <div class="animate-fade-up login-proof">
+          <div class="login-proof-row">
+            <span class="login-proof-icon"><i class="fa-solid fa-folder-open" aria-hidden="true"></i></span>
+            <div>
+              <p class="font-display">Upload your documents once</p>
+              <p class="text-mute">
+                Marksheets, Aadhaar, PAN, photo. Kept in your own private account, masked where shown.
+              </p>
+            </div>
+          </div>
+          <div class="login-proof-row">
+            <span class="login-proof-icon"><i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i></span>
+            <div>
+              <p class="font-display">Any portal fills itself</p>
+              <p class="text-mute">
+                It reads the page, matches every box to what it knows, and types it.
+              </p>
+            </div>
+          </div>
+          <div class="login-proof-row">
+            <span class="login-proof-icon"><i class="fa-solid fa-lock" aria-hidden="true"></i></span>
+            <div>
+              <p class="font-display">You approve every step</p>
+              <p class="text-mute">Save, Submit and the payment always wait for your yes.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- The door, on the right. -->
+      <section class="login-card-wrap">
+        <div class="login-card animate-fade-up">
+          <div class="login-card-glow" aria-hidden="true"></div>
+
+          <div class="login-card-inner">
+            <div class="login-mark-wrap">
+              <div class="login-mark-halo" aria-hidden="true"></div>
+              <svg class="login-mark-rings" viewBox="0 0 160 160" fill="none" aria-hidden="true">
+                <ellipse cx="80" cy="80" rx="72" ry="30" stroke="currentColor" stroke-width="1" transform="rotate(-20 80 80)" />
+                <ellipse cx="80" cy="80" rx="60" ry="24" stroke="currentColor" stroke-width="1" transform="rotate(25 80 80)" />
+                <circle cx="150" cy="66" r="2" fill="#9333ea" />
+                <circle cx="14" cy="92" r="2" fill="#5b4ef0" />
+              </svg>
+              <div class="login-hex font-display">N</div>
+            </div>
+
+            <span class="font-display login-wordmark">Niyukti<span class="login-wordmark-ai">AI</span></span>
+
+            <h2 class="font-display login-welcome">Welcome back</h2>
+            <p class="text-mute login-sub">Continue to your NiyuktiAI workspace</p>
+
+            <!-- The message arrives after the page has, so it has to announce
+                 itself rather than wait to be found. -->
+            <p class="login-error" role="alert" data-error hidden></p>
+
+            <a class="google-btn" href="/v1/auth/start" data-signin>
+              <span class="google-mark">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1Z" />
+                  <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A11 11 0 0 0 12 23Z" />
+                  <path fill="#FBBC05" d="M5.84 14.1a6.6 6.6 0 0 1 0-4.2V7.06H2.18a11 11 0 0 0 0 9.88l3.66-2.84Z" />
+                  <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1A11 11 0 0 0 2.18 7.06l3.66 2.84C6.71 7.31 9.14 5.38 12 5.38Z" />
+                </svg>
+              </span>
+              Continue with Google
+            </a>
+
+            <p class="login-notice" data-not-configured hidden>
+              Google sign-in is not switched on for this install. On a laptop the app opens without
+              it — everything is stored under the local account.
+            </p>
+
+            <p class="text-mute login-fine">
+              By continuing you agree to the
+              <a href="index.html#top" data-legal="terms">terms</a> and the
+              <a href="index.html#top" data-legal="privacy">privacy policy</a>.
+            </p>
+          </div>
+        </div>
+
+        <p class="text-mute login-local">
+          Running this on your own machine?
+          <a href="dashboard.html">Open the app without signing in</a>
+        </p>
+      </section>
+    </main>
+
+    <script src="assets/vendor/bootstrap.bundle.min.js"></script>
+    <script type="module" src="assets/js/pages/login.js"></script>
+  </body>
+</html>

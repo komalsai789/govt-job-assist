@@ -1,0 +1,568 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NiyuktiAI — Government job forms that fill themselves</title>
+    <meta
+      name="description"
+      content="Upload your certificates once and every government job application form fills itself — SSC, UPSC, Railway and State PSC, in under a minute, with zero typing."
+    />
+    <link rel="icon" href="assets/img/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/vendor/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/tokens.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/components.css" />
+    <link rel="stylesheet" href="assets/css/shell.css" />
+    <link rel="stylesheet" href="assets/css/pages.css" />
+    <link rel="stylesheet" href="assets/css/landing.css" />
+  </head>
+
+  <!-- The signed-out face of the product. `data-surface="public"` is what
+       scopes the whole marketing design language; none of it can reach the
+       app behind the login. -->
+  <body data-surface="public" class="grain bg-ink relative">
+    <a class="visually-hidden-focusable skip-link" href="#main-content">Skip to content</a>
+
+    <!-- The colour field the page floats over. -->
+    <div class="backdrop" aria-hidden="true">
+      <span class="aurora aurora-a animate-aurora"></span>
+      <span class="aurora aurora-b animate-aurora-slow"></span>
+      <span class="aurora aurora-c animate-aurora"></span>
+    </div>
+
+    <div class="relative" style="z-index: 10">
+      <!-- ============================================================ nav -->
+      <div class="scroll-progress" data-progress aria-hidden="true"></div>
+
+      <header class="nav-shell animate-fade-up">
+        <nav class="nav-capsule" data-nav>
+          <a class="nav-brand font-display" href="#top">NiyuktiAI</a>
+
+          <div class="nav-links-wrap">
+            <span class="nav-pill" data-nav-pill aria-hidden="true"></span>
+            <ul class="nav-links" data-nav-links>
+              <li><a href="#problem">Problem</a></li>
+              <li><a href="#how">How it works</a></li>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#documents">Documents</a></li>
+              <li><a href="#portals">Portals</a></li>
+              <li><a href="#faq">FAQ</a></li>
+            </ul>
+          </div>
+
+          <div class="nav-actions">
+            <a class="nav-login" href="login.html" data-signed-out>Log in</a>
+            <a class="landing-btn" href="login.html" data-cta>Get started</a>
+            <button
+              class="nav-toggle"
+              type="button"
+              data-nav-toggle
+              aria-expanded="false"
+              aria-controls="nav-menu"
+              aria-label="Open the menu"
+            >
+              <i class="fa-solid fa-bars" aria-hidden="true"></i>
+            </button>
+          </div>
+        </nav>
+
+        <!-- Narrower than the capsule's link breakpoint the six sections have
+             nowhere to sit, and the only way to any of them would be to scroll
+             the whole page. They move in here instead. -->
+        <div class="nav-menu" id="nav-menu" data-nav-menu hidden>
+          <ul>
+            <li><a href="#problem">Problem</a></li>
+            <li><a href="#how">How it works</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#documents">Documents</a></li>
+            <li><a href="#portals">Portals</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+          <a class="nav-menu-login" href="login.html" data-signed-out>Log in</a>
+        </div>
+      </header>
+
+      <main id="main-content">
+        <!-- ======================================================== hero -->
+        <section id="top" class="hero hero-ready">
+          <div class="hero-inner">
+            <div class="hero-stagger">
+              <span class="hero-in hero-badge">
+                <i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i>
+                AI agent for government jobs
+              </span>
+
+              <h1 class="font-display text-fg hero-headline" data-headline>
+                <!-- Each word blur-reveals in turn; the delays are written by
+                     script so the copy stays readable in the markup. -->
+                <span data-blur="0.18">Your AI agent that</span>
+                <span class="accent hero-word" style="animation-delay: 0.4s">automatically applies</span>
+                <span data-blur="0.455">for government jobs.</span>
+              </h1>
+
+              <p class="hero-in text-mute hero-lede">
+                NiyuktiAI finds relevant government openings, fills every form, uploads your
+                documents and submits the application — all on autopilot.
+              </p>
+
+              <ul class="hero-in hero-highlights">
+                <li>
+                  <span class="hero-highlight-icon"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></span>
+                  <span><b>100% govt. jobs</b><small>Central &amp; state</small></span>
+                </li>
+                <li>
+                  <span class="hero-highlight-icon"><i class="fa-solid fa-bullseye" aria-hidden="true"></i></span>
+                  <span><b>Auto-fill forms</b><small>Zero typing</small></span>
+                </li>
+                <li>
+                  <span class="hero-highlight-icon"><i class="fa-solid fa-lock" aria-hidden="true"></i></span>
+                  <span><b>Secure &amp; private</b><small>Your data stays yours</small></span>
+                </li>
+              </ul>
+
+              <div class="hero-in hero-ctas">
+                <a class="landing-btn landing-btn-lg" href="login.html" data-cta>
+                  Start free automation
+                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                </a>
+                <a class="landing-btn-ghost" href="#how">
+                  See how it works
+                  <i class="fa-solid fa-circle-play" aria-hidden="true"></i>
+                </a>
+              </div>
+
+              <div class="hero-in hero-trust">
+                <div class="hero-faces" aria-hidden="true">
+                  <span style="--a: #6d3df5; --b: #8b5cf6">RK</span>
+                  <span style="--a: #7c4dff; --b: #a78bfa">AS</span>
+                  <span style="--a: #5b3fd6; --b: #8b5cf6">MP</span>
+                  <span style="--a: #8b5cf6; --b: #c4b5fd">DR</span>
+                </div>
+                <div>
+                  <p class="hero-trust-title">Trusted by 10,000+ aspirants</p>
+                  <p class="hero-trust-sub">
+                    <span class="hero-stars" aria-hidden="true">★★★★★</span>
+                    4.9 average rating
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- The dashboard is the argument, so it gets the larger share. -->
+            <div class="hero-stagger relative">
+              <div class="hero-glow" aria-hidden="true"></div>
+              <div class="hero-in hero-panel">
+                <div class="agent-card glass">
+                  <div class="agent-head">
+                    <span class="agent-dot"></span>
+                    <span class="font-display agent-title">NiyuktiAI agent</span>
+                    <span class="agent-status">working</span>
+                  </div>
+                  <ul class="agent-steps">
+                    <li class="is-done">
+                      <i class="fa-solid fa-check" aria-hidden="true"></i>
+                      <span>Read Class 10 marksheet<small>Board, hall ticket, marks, year</small></span>
+                    </li>
+                    <li class="is-done">
+                      <i class="fa-solid fa-check" aria-hidden="true"></i>
+                      <span>Cross-checked with Aadhaar<small>Name and date of birth agree</small></span>
+                    </li>
+                    <li class="is-running">
+                      <i class="fa-solid fa-spinner fa-spin" aria-hidden="true"></i>
+                      <span>Filling SSC application<span class="caret"></span><small>14 of 22 fields</small></span>
+                    </li>
+                    <li>
+                      <i class="fa-regular fa-circle" aria-hidden="true"></i>
+                      <span>Waiting for you to submit<small>Nothing is filed without you</small></span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="float-card float drop-in" style="--delay: 0.4s">
+                  <i class="fa-solid fa-file-lines" aria-hidden="true"></i>
+                  <span><b>22 fields</b><small>filled in 48 seconds</small></span>
+                </div>
+                <div class="float-card float-b drop-in" style="--delay: 0.6s">
+                  <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+                  <span><b>Nothing uploaded</b><small>read on your machine</small></span>
+                </div>
+                <div class="float-card float-c drop-in" style="--delay: 0.8s">
+                  <i class="fa-solid fa-bell" aria-hidden="true"></i>
+                  <span><b>New: SSC CGL</b><small>closes in 6 days</small></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-in portal-strip">
+            <p class="font-label text-mute">Works with</p>
+            <ul>
+              <li>SSC</li><li>UPSC</li><li>RRB</li><li>IBPS</li>
+              <li>TSPSC</li><li>APPSC</li><li>NTA</li><li>India Post</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- ===================================================== problem -->
+        <section id="problem" class="band">
+          <div class="section-inner">
+            <div class="center-header">
+              <p class="glass-pill font-label eyebrow"><span class="ping"></span>The problem</p>
+              <h2 class="font-display heading">
+                Applying for a government job is mostly <span class="accent">data entry</span>
+              </h2>
+              <p class="text-mute lede">
+                Every notification opens the same hour of work — before a single question about the
+                job itself.
+              </p>
+            </div>
+
+            <div class="three-up">
+              <article class="reveal-scale card">
+                <div class="stat font-display">47 min</div>
+                <h3>Retyping the same details</h3>
+                <p class="text-mute">
+                  Name, father name, DOB, marks, category — the same twenty fields, on every portal,
+                  every time.
+                </p>
+              </article>
+              <article class="reveal-scale card">
+                <div class="stat font-display">1 in 5</div>
+                <h3>Rejected over a typo</h3>
+                <p class="text-mute">
+                  A digit off in a roll number is enough to void an application after the fee is paid.
+                </p>
+              </article>
+              <article class="reveal-scale card">
+                <div class="stat font-display">No undo</div>
+                <h3>Deadlines do not wait</h3>
+                <p class="text-mute">
+                  Portals crash on the last day. An hour lost to manual entry is an hour you do not
+                  get back.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================================================ how it works -->
+        <section id="how">
+          <div class="section-inner">
+            <div class="center-header">
+              <p class="glass-pill font-label eyebrow"><span class="ping"></span>How it works</p>
+              <h2 class="font-display heading">Three steps. <span class="accent">One minute</span></h2>
+              <p class="text-mute lede">
+                No extension to configure, no template to fill in first. Upload, then open the portal.
+              </p>
+            </div>
+
+            <!-- The machine itself: what runs on your laptop, what talks to the
+                 portal, and which way each piece of your data moves. -->
+            <div class="reveal-scale flow-board">
+              <div class="flow-row">
+                <div class="flow-node">
+                  <span class="flow-icon"><i class="fa-solid fa-folder-open" aria-hidden="true"></i></span>
+                  <b>Your documents</b>
+                  <small>On your computer</small>
+                </div>
+                <span class="flow-arrow" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
+                <div class="flow-node is-core">
+                  <span class="flow-icon"><i class="fa-solid fa-robot" aria-hidden="true"></i></span>
+                  <b>NiyuktiAI</b>
+                  <small>Reads and cross-checks, locally</small>
+                </div>
+                <span class="flow-arrow" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
+                <div class="flow-node">
+                  <span class="flow-icon"><i class="fa-brands fa-chrome" aria-hidden="true"></i></span>
+                  <b>Chrome</b>
+                  <small>Types into the real portal</small>
+                </div>
+                <span class="flow-arrow" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
+                <div class="flow-node">
+                  <span class="flow-icon"><i class="fa-solid fa-building-columns" aria-hidden="true"></i></span>
+                  <b>Government portal</b>
+                  <small>SSC, UPSC, RRB, State PSC</small>
+                </div>
+              </div>
+              <p class="text-mute flow-note">
+                The only outbound connection is Chrome talking to the portal over HTTPS — exactly
+                what would happen if you filled the form by hand.
+              </p>
+            </div>
+
+            <ol class="steps-row">
+              <li class="reveal">
+                <div class="font-label text-brand step-n">01</div>
+                <h3 class="font-display">Upload once</h3>
+                <p class="text-mute">
+                  Aadhaar, marks memos, caste and residence certificates, photo and signature. PDF,
+                  JPG or a phone snap — all fine.
+                </p>
+                <div class="reveal-rule step-rule" style="--via: var(--color-brand)" aria-hidden="true"></div>
+              </li>
+              <li class="reveal">
+                <div class="font-label text-brand step-n">02</div>
+                <h3 class="font-display">The assistant reads them</h3>
+                <p class="text-mute">
+                  Every field is extracted and cross-checked against your other documents, so
+                  mismatches surface before submission, not after.
+                </p>
+                <div class="reveal-rule step-rule" style="--via: var(--color-brand2)" aria-hidden="true"></div>
+              </li>
+
+              <li class="reveal">
+                <div class="font-label text-brand step-n">03</div>
+                <h3 class="font-display">The form fills itself</h3>
+                <p class="text-mute">
+                  Open the portal and hit fill. Fields, dropdowns, dates and uploads are completed.
+                  You review and submit.
+                </p>
+                <div class="reveal-rule step-rule" style="--via: var(--color-cyan)" aria-hidden="true"></div>
+              </li>
+
+            </ol>
+
+          </div>
+        </section>
+
+        <!-- ==================================================== features -->
+        <section id="features" class="band">
+          <div class="section-inner">
+            <div class="center-header">
+              <p class="glass-pill font-label eyebrow"><span class="ping"></span>Features</p>
+              <h2 class="font-display heading">
+                Built for how these forms <span class="accent">actually behave</span>
+              </h2>
+              <p class="text-mute lede">
+                Not a generic autofill. Every rule here exists because a real application portal
+                enforces it.
+              </p>
+            </div>
+            <div class="feature-grid" data-features></div>
+          </div>
+        </section>
+
+        <!-- =================================================== documents -->
+        <section id="documents" class="section-bleed">
+          <div class="section-inner section-inner-bleed">
+            <div class="center-header">
+              <p class="glass-pill font-label eyebrow"><span class="ping"></span>What it reads</p>
+              <h2 class="font-display heading">
+                Every document, and <span class="accent">what it takes</span> from it
+              </h2>
+              <p class="text-mute lede">
+                Upload whatever you have. Each one contributes the fields it is the authority on —
+                and nothing more.
+              </p>
+            </div>
+          </div>
+
+          <!-- Full-bleed: the tracks run past the content column so the motion
+               reads as a continuous belt rather than a boxed-in carousel. -->
+          <div class="reveal-scale doc-belt">
+            <div class="doc-track"><div class="marquee" data-belt="a"></div></div>
+            <div class="doc-track"><div class="marquee-rev" data-belt="b"></div></div>
+          </div>
+
+          <p class="reveal-soft text-mute doc-note">
+            <i class="fa-solid fa-check text-brand" aria-hidden="true"></i>
+            Missing one? The assistant fills what it can and marks the rest for you.
+          </p>
+        </section>
+
+        <!-- ===================================================== portals -->
+        <section id="portals" class="band">
+          <div class="section-inner">
+            <div class="center-header">
+              <p class="glass-pill font-label eyebrow"><span class="ping"></span>Portals</p>
+              <h2 class="font-display heading">One profile. <span class="accent">Every commission</span></h2>
+              <p class="text-mute lede">
+                New portals are added by describing their fields once — no code change, no redeploy.
+              </p>
+            </div>
+
+            <div class="glass portal-grid" data-portals></div>
+          </div>
+        </section>
+
+        <!-- ========================================================= faq -->
+        <section id="faq">
+          <div class="section-inner">
+            <div class="center-header">
+              <p class="glass-pill font-label eyebrow"><span class="ping"></span>FAQ</p>
+              <h2 class="font-display heading">The things people <span class="accent">actually ask</span></h2>
+            </div>
+            <div class="glass reveal-scale faq-panel" data-faq></div>
+          </div>
+        </section>
+
+        <!-- ========================================================= cta -->
+        <section class="cta-section">
+          <div class="cta-inner">
+            <div class="reveal-scale glass cta-panel">
+              <div class="cta-glow-a" aria-hidden="true"></div>
+              <div class="cta-glow-b" aria-hidden="true"></div>
+              <div class="relative">
+                <h2 class="font-display cta-title">
+                  Stop typing your own name <span class="accent">for the twentieth time</span>
+                </h2>
+                <p class="reveal-soft text-mute cta-lede">
+                  Sign in with Google and upload your first certificate. Nothing to install, nothing
+                  to pay for.
+                </p>
+                <div class="reveal cta-action">
+                  <a class="landing-btn landing-btn-lg" href="login.html" data-cta>
+                    Continue with Google
+                    <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                  </a>
+                </div>
+                <p class="reveal-soft text-mute cta-fine">
+                  Free while in beta · Your documents stay in your own private account
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- ====================================================== footer -->
+      <footer class="site-footer">
+        <div class="footer-wordmark font-display" aria-hidden="true">NiyuktiAI</div>
+        <div class="footer-inner reveal">
+          <div class="footer-cols">
+            <div>
+              <div class="footer-brand">
+                <span class="footer-mark font-display">N</span>
+                <span class="font-display footer-name">NiyuktiAI</span>
+                <span class="footer-beta">Beta</span>
+              </div>
+              <p class="text-mute footer-blurb">
+                Government job forms that fill themselves. Sign in with Google — your documents live
+                in your own private account, never shared with anyone.
+              </p>
+              <p class="text-mute footer-team">Built by a team of four.</p>
+            </div>
+
+            <div class="footer-col">
+              <h3 class="font-label">Product</h3>
+              <ul>
+                <li><a href="#how">How it works</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#documents">What it reads</a></li>
+                <li><a href="#portals">Supported portals</a></li>
+                <li><a href="#faq">FAQ</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-col">
+              <h3 class="font-label">Portals</h3>
+              <ul>
+                <li><a href="#portals">SSC</a></li>
+                <li><a href="#portals">UPSC</a></li>
+                <li><a href="#portals">Railway (RRB)</a></li>
+                <li><a href="#portals">State PSC</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-col">
+              <h3 class="font-label">Legal</h3>
+              <ul data-legal-links></ul>
+              <a class="footer-contact" href="#" data-bs-toggle="modal" data-bs-target="#contact">
+                Contact us
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-bottom">
+            <p class="text-mute">© <span data-year></span> NiyuktiAI. Built in Andhra Pradesh.</p>
+            <p class="text-mute">
+              Not affiliated with any government body. Always verify details in the official
+              notification.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- The legal documents, opened from the footer. -->
+    <div class="modal fade" id="legal" tabindex="-1" aria-labelledby="legal-title" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title card-title" id="legal-title"></h2>
+            <button type="button" class="btn btn-ghost btn-icon" data-bs-dismiss="modal" aria-label="Close">
+              <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+            </button>
+          </div>
+          <div class="modal-body legal-body" data-legal-body></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="contact" tabindex="-1" aria-labelledby="contact-title" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title card-title" id="contact-title">Contact us</h2>
+            <button type="button" class="btn btn-ghost btn-icon" data-bs-dismiss="modal" aria-label="Close">
+              <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+            </button>
+          </div>
+          <form class="modal-body" data-contact>
+            <label class="form-label" for="contact-name">Your name</label>
+            <input class="form-control" id="contact-name" name="name" required maxlength="120" />
+
+            <label class="form-label" for="contact-email" style="margin-top: 0.875rem">Email</label>
+            <input class="form-control" id="contact-email" name="email" type="email" required maxlength="200" />
+
+            <label class="form-label" for="contact-message" style="margin-top: 0.875rem">Message</label>
+            <textarea class="form-control" id="contact-message" name="message" rows="4" required maxlength="2000"></textarea>
+
+            <p class="form-hint">
+              Sent to the team only. Nothing here is added to a mailing list.
+            </p>
+            <p class="text-danger-fg" data-contact-error hidden></p>
+
+            <div class="modal-footer" style="padding-inline: 0; padding-bottom: 0">
+              <button class="btn btn-outline" type="button" data-bs-dismiss="modal">Cancel</button>
+              <button class="btn btn-primary" type="submit">Send</button>
+            </div>
+          </form>
+
+          <!-- Closing the dialog on its own would leave nobody sure the
+               message went anywhere. -->
+          <div class="modal-body contact-sent" data-contact-sent hidden>
+            <span class="contact-sent-mark"><i class="fa-solid fa-check" aria-hidden="true"></i></span>
+            <p class="contact-sent-title font-display">Message sent</p>
+            <p class="text-mute contact-sent-note" data-contact-sent-note></p>
+            <button class="btn btn-primary" type="button" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Consent: declined by default, and the page works either way. -->
+    <div class="consent-banner" data-consent hidden>
+      <p>
+        NiyuktiAI keeps one cookie so you stay signed in. Nothing here tracks you across other
+        sites, and there is no advertising.
+        <a href="#" data-legal-open="cookies">Read the cookie notice</a>
+      </p>
+      <div class="consent-actions">
+        <button class="btn btn-outline btn-sm" type="button" data-consent-no>Essential only</button>
+        <button class="btn btn-primary btn-sm" type="button" data-consent-yes>That's fine</button>
+      </div>
+    </div>
+
+    <script src="assets/vendor/bootstrap.bundle.min.js"></script>
+    <script type="module" src="assets/js/landing/landing.js"></script>
+  </body>
+</html>

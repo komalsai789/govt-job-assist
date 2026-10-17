@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Applications · NiyuktiAI</title>
+    <meta name="description" content="NiyuktiAI finds government jobs you are eligible for and fills in their application forms." />
+    <link rel="icon" href="assets/img/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/vendor/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/tokens.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/components.css" />
+    <link rel="stylesheet" href="assets/css/shell.css" />
+    <link rel="stylesheet" href="assets/css/pages.css" />
+  </head>
+  <body>
+    <a class="visually-hidden-focusable skip-link" href="#main-content">Skip to content</a>
+
+    <div class="app-shell">
+    <aside class="rail" data-collapsed="false">
+      <div class="rail-head">
+        <a href="dashboard.html" aria-label="NiyuktiAI dashboard">
+          <span class="logo">
+            <svg class="logo-mark" viewBox="0 0 32 32" fill="none" role="img" aria-label="NiyuktiAI">
+              <defs>
+                <linearGradient id="niyukti-mark" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="var(--brand-500)" />
+                  <stop offset="1" stop-color="var(--brand-700)" />
+                </linearGradient>
+              </defs>
+              <rect width="32" height="32" rx="9" fill="url(#niyukti-mark)" />
+              <path d="M10.5 22V10.8l11 10.4V10" stroke="white" stroke-width="2.6"
+                    stroke-linecap="round" stroke-linejoin="round" />
+              <circle cx="21.5" cy="9.5" r="2.6" fill="white" fill-opacity="0.35" />
+            </svg>
+            <span class="logo-word rail-hide-collapsed">NiyuktiAI</span>
+          </span>
+          <p class="rail-tagline rail-hide-collapsed">AI-Powered Government<br />Job Application Assistant</p>
+        </a>
+        <button class="btn btn-ghost btn-icon btn-sm rail-hide-collapsed" data-rail-toggle
+                type="button" aria-label="Collapse sidebar">
+          <i class="fa-solid fa-angles-left" aria-hidden="true"></i>
+        </button>
+      </div>
+
+      <nav class="rail-nav scrollbar-slim" aria-label="Main">
+        <ul>
+          <li>
+            <a class="rail-link" href="dashboard.html">
+              <i class="fa-solid fa-table-cells-large" aria-hidden="true"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a class="rail-link" href="jobs.html">
+              <i class="fa-solid fa-briefcase" aria-hidden="true"></i>
+              <span>Latest Jobs</span>
+            </a>
+          </li>
+          <li>
+            <a class="rail-link" href="live.html">
+              <i class="fa-solid fa-tower-broadcast" aria-hidden="true"></i>
+              <span>Live Working</span>
+            </a>
+          </li>
+          <li>
+            <a class="rail-link" href="assistant.html">
+              <i class="fa-solid fa-robot" aria-hidden="true"></i>
+              <span>AI Assistant</span>
+            </a>
+          </li>
+          <li>
+            <a class="rail-link" href="applications.html" aria-current="page">
+              <i class="fa-solid fa-file-lines" aria-hidden="true"></i>
+              <span>My Applications</span>
+            </a>
+          </li>
+          <li>
+            <a class="rail-link" href="documents.html">
+              <i class="fa-solid fa-folder-open" aria-hidden="true"></i>
+              <span>My Documents</span>
+            </a>
+          </li>
+          <li>
+            <a class="rail-link" href="profile.html">
+              <i class="fa-solid fa-user" aria-hidden="true"></i>
+              <span>Profile</span>
+            </a>
+          </li>
+          <li>
+            <a class="rail-link" href="alerts.html">
+              <i class="fa-solid fa-bell" aria-hidden="true"></i>
+              <span>Alerts</span>
+            <span class="badge badge-danger rail-count" data-unread hidden>0</span>
+            </a>
+          </li>
+          <li>
+            <a class="rail-link" href="settings.html">
+              <i class="fa-solid fa-gear" aria-hidden="true"></i>
+              <span>Settings</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="rail-foot">
+        <button class="btn btn-ghost btn-icon rail-show-collapsed" data-rail-toggle
+                type="button" aria-label="Expand sidebar">
+          <i class="fa-solid fa-angles-right" aria-hidden="true"></i>
+        </button>
+        <a class="rail-link" href="settings.html">
+          <i class="fa-solid fa-life-ring" aria-hidden="true"></i>
+          <span>Help &amp; Support</span>
+        </a>
+        <div class="dropdown">
+          <button class="user-chip" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <span class="avatar" data-user-initial aria-hidden="true">?</span>
+            <span class="user-chip-text rail-hide-collapsed">
+              <span class="truncate" data-user-name>Signed in</span>
+              <span class="truncate text-muted-fg" data-user-email></span>
+            </span>
+            <i class="fa-solid fa-sort" aria-hidden="true"></i>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+            <li><a class="dropdown-item" href="settings.html">Settings</a></li>
+            <li><button class="dropdown-item" type="button" data-theme-toggle>Switch theme</button></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" href="/v1/auth/signout">Sign out</a></li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+
+      <div class="app-main-column">
+        <header class="topbar">
+          <button class="btn btn-ghost btn-icon d-lg-none" type="button"
+                  data-bs-toggle="offcanvas" data-bs-target="#mobile-rail" aria-label="Open menu">
+            <i class="fa-solid fa-bars" aria-hidden="true"></i>
+          </button>
+
+          <form class="topbar-search" role="search">
+            <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+            <input type="search" name="q" placeholder="Search jobs, documents, applications" aria-label="Search" />
+            <kbd>Ctrl K</kbd>
+          </form>
+
+          <div class="ms-auto d-flex align-items-center gap-2">
+            <button class="btn btn-ghost btn-icon" type="button" data-theme-toggle aria-label="Switch theme">
+              <i class="fa-solid fa-sun" aria-hidden="true"></i>
+            </button>
+            <a class="btn btn-ghost btn-icon position-relative" href="alerts.html" aria-label="Alerts">
+              <i class="fa-solid fa-bell" aria-hidden="true"></i>
+            </a>
+            <a class="btn btn-primary btn-sm" href="jobs.html">
+              <i class="fa-solid fa-briefcase" aria-hidden="true"></i>
+              Find a job
+            </a>
+          </div>
+        </header>
+
+        <main class="app-main" id="main-content">
+          <div class="app-container">
+            <div class="stack" style="gap: 1.5rem">
+              <header class="page-header">
+                <h1>My Applications</h1>
+                <p>
+                  Every application you have started, and exactly where each one stands. An
+                  application is only ever submitted by you.
+                </p>
+              </header>
+
+              <ul class="nav nav-tabs" role="tablist" data-tabs>
+                <li class="nav-item"><button class="nav-link active" type="button" data-tab="">All</button></li>
+                <li class="nav-item"><button class="nav-link" type="button" data-tab="in-progress">In progress</button></li>
+                <li class="nav-item"><button class="nav-link" type="button" data-tab="action-required">Needs you</button></li>
+                <li class="nav-item"><button class="nav-link" type="button" data-tab="submitted">Submitted</button></li>
+              </ul>
+
+              <div class="stack" style="gap: 0.75rem" data-applications></div>
+            </div>
+          </div>
+        </main>
+      </div>
+
+    <nav class="mobile-nav" aria-label="Sections">
+      <a href="dashboard.html"><i class="fa-solid fa-table-cells-large" aria-hidden="true"></i><span>Home</span></a>
+      <a href="jobs.html"><i class="fa-solid fa-briefcase" aria-hidden="true"></i><span>Jobs</span></a>
+      <a href="live.html"><i class="fa-solid fa-tower-broadcast" aria-hidden="true"></i><span>Live</span></a>
+      <a href="assistant.html"><i class="fa-solid fa-robot" aria-hidden="true"></i><span>Assistant</span></a>
+      <a href="applications.html" aria-current="page"><i class="fa-solid fa-file-lines" aria-hidden="true"></i><span>Applications</span></a>
+    </nav>
+    </div>
+
+    <script src="assets/vendor/bootstrap.bundle.min.js"></script>
+    <script type="module" src="assets/js/core/ui.js"></script>
+    <script type="module" src="assets/js/pages/applications.js"></script>
+  </body>
+</html>

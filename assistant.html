@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AI Assistant · NiyuktiAI</title>
+    <meta name="description" content="NiyuktiAI finds government jobs you are eligible for and fills in their application forms." />
+    <link rel="icon" href="assets/img/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/vendor/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/tokens.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/components.css" />
+    <link rel="stylesheet" href="assets/css/shell.css" />
+    <link rel="stylesheet" href="assets/css/pages.css" />
+  </head>
+  <body>
+    <a class="visually-hidden-focusable skip-link" href="#main-content">Skip to content</a>
+
+    <div class="app-shell">
+    <aside class="rail" data-collapsed="false">
+      <div class="rail-head">
+        <a href="dashboard.html" aria-label="NiyuktiAI dashboard">
+          <span class="logo">
+            <svg class="logo-mark" viewBox="0 0 32 32" fill="none" role="img" aria-label="NiyuktiAI">
+              <defs>
+                <linearGradient id="niyukti-mark" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="var(--brand-500)" />
+                  <stop offset="1" stop-color="var(--brand-700)" />
+                </linearGradient>
+              </defs>
+              <rect width="32" height="32" rx="9" fill="url(#niyukti-mark)" />
+              <path d="M10.5 22V10.8l11 10.4V10" stroke="white" stroke-width="2.6"
+                    stroke-linecap="round" stroke-linejoin="round" />
+              <circle cx="21.5" cy="9.5" r="2.6" fill="white" fill-opacity="0.35" />
+            </svg>
+            <span class="logo-word rail-hide-collapsed">NiyuktiAI</span>
+          </span>
+          <p class="rail-tagline rail-hide-collapsed">AI-Powered Government<br />Job Application Assistant</p>
+        </a>
+        <button class="btn btn-ghost btn-icon btn-sm rail-hide-collapsed" data-rail-toggle
+                type="button" aria-label="Collapse sidebar">
+          <i class="fa-solid fa-angles-left" aria-hidden="true"></i>
+        </button>
+      </div>
+
+      <nav class="rail-nav scrollbar-slim" aria-label="Main">
+        <ul>
+          <li>
+            <a class="rail-link" href="dashboard.html">
+              <i class="fa-solid fa-table-cells-large" aria-hidden="true"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a class="rail-link" href="jobs.html">
+              <i class="fa-solid fa-briefcase" aria-hidden="true"></i>
+              <span>Latest Jobs</span>
+            </a>
+          </li>
+          <li>
+            <a class="rail-link" href="live.html">
+              <i class="fa-solid fa-tower-broadcast" aria-hidden="true"></i>
+              <span>Live Working</span>
+            </a>
+          </li>
+          <li>
+            <a class="rail-link" href="assistant.html" aria-current="page">
+              <i class="fa-solid fa-robot" aria-hidden="true"></i>
+              <span>AI Assistant</span>
+            </a>
+          </li>
+          <li>
+            <a class="rail-link" href="applications.html">
+              <i class="fa-solid fa-file-lines" aria-hidden="true"></i>
+              <span>My Applications</span>
+            </a>
+          </li>
+          <li>
+            <a class="rail-link" href="documents.html">
+              <i class="fa-solid fa-folder-open" aria-hidden="true"></i>
+              <span>My Documents</span>
+            </a>
+          </li>
+          <li>
+            <a class="rail-link" href="profile.html">
+              <i class="fa-solid fa-user" aria-hidden="true"></i>
+              <span>Profile</span>
+            </a>
+          </li>
+          <li>
+            <a class="rail-link" href="alerts.html">
+              <i class="fa-solid fa-bell" aria-hidden="true"></i>
+              <span>Alerts</span>
+            <span class="badge badge-danger rail-count" data-unread hidden>0</span>
+            </a>
+          </li>
+          <li>
+            <a class="rail-link" href="settings.html">
+              <i class="fa-solid fa-gear" aria-hidden="true"></i>
+              <span>Settings</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="rail-foot">
+        <button class="btn btn-ghost btn-icon rail-show-collapsed" data-rail-toggle
+                type="button" aria-label="Expand sidebar">
+          <i class="fa-solid fa-angles-right" aria-hidden="true"></i>
+        </button>
+        <a class="rail-link" href="settings.html">
+          <i class="fa-solid fa-life-ring" aria-hidden="true"></i>
+          <span>Help &amp; Support</span>
+        </a>
+        <div class="dropdown">
+          <button class="user-chip" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <span class="avatar" data-user-initial aria-hidden="true">?</span>
+            <span class="user-chip-text rail-hide-collapsed">
+              <span class="truncate" data-user-name>Signed in</span>
+              <span class="truncate text-muted-fg" data-user-email></span>
+            </span>
+            <i class="fa-solid fa-sort" aria-hidden="true"></i>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+            <li><a class="dropdown-item" href="settings.html">Settings</a></li>
+            <li><button class="dropdown-item" type="button" data-theme-toggle>Switch theme</button></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" href="/v1/auth/signout">Sign out</a></li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+
+      <div class="app-main-column">
+        <header class="topbar">
+          <button class="btn btn-ghost btn-icon d-lg-none" type="button"
+                  data-bs-toggle="offcanvas" data-bs-target="#mobile-rail" aria-label="Open menu">
+            <i class="fa-solid fa-bars" aria-hidden="true"></i>
+          </button>
+
+          <form class="topbar-search" role="search">
+            <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+            <input type="search" name="q" placeholder="Search jobs, documents, applications" aria-label="Search" />
+            <kbd>Ctrl K</kbd>
+          </form>
+
+          <div class="ms-auto d-flex align-items-center gap-2">
+            <button class="btn btn-ghost btn-icon" type="button" data-theme-toggle aria-label="Switch theme">
+              <i class="fa-solid fa-sun" aria-hidden="true"></i>
+            </button>
+            <a class="btn btn-ghost btn-icon position-relative" href="alerts.html" aria-label="Alerts">
+              <i class="fa-solid fa-bell" aria-hidden="true"></i>
+            </a>
+            <a class="btn btn-primary btn-sm" href="jobs.html">
+              <i class="fa-solid fa-briefcase" aria-hidden="true"></i>
+              Find a job
+            </a>
+          </div>
+        </header>
+
+        <main class="app-main" id="main-content">
+          <div class="app-container">
+            <div class="chat-layout">
+              <!-- A column beside the thread on a wide screen and a drawer on a
+                   narrow one, from one list: .offcanvas-lg is inert above 992px
+                   and Bootstrap drives it below. -->
+              <aside class="chat-rail offcanvas-lg offcanvas-start" tabindex="-1"
+                     id="chat-rail" aria-labelledby="chat-rail-title">
+                <div class="offcanvas-header">
+                  <h2 class="offcanvas-title card-title" id="chat-rail-title">Conversations</h2>
+                  <button class="btn btn-ghost btn-icon" type="button"
+                          data-bs-dismiss="offcanvas" aria-label="Close">
+                    <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                  </button>
+                </div>
+
+                <div class="chat-rail-body">
+                  <button class="btn btn-primary w-100" type="button" data-new-chat>
+                    <i class="fa-solid fa-plus" aria-hidden="true"></i>
+                    New chat
+                  </button>
+                  <p class="chat-rail-label">Recent</p>
+                  <ul class="chat-history scrollbar-slim" data-sessions></ul>
+                </div>
+              </aside>
+
+              <section class="chat-main card">
+                <header class="chat-head">
+                  <div style="min-width: 0; flex: 1 1 auto">
+                    <h1 class="card-title" style="font-size: var(--text-lg)">AI Assistant</h1>
+                    <p class="card-subtitle" style="margin: 0">
+                      Claude Opus 5, with your documents, your jobs and this dashboard in front of it.
+                      Ask in Telugu, English or both.
+                    </p>
+                  </div>
+                  <button class="btn btn-ghost btn-icon d-lg-none" type="button"
+                          data-bs-toggle="offcanvas" data-bs-target="#chat-rail"
+                          aria-controls="chat-rail" aria-label="Past conversations">
+                    <i class="fa-solid fa-clock-rotate-left" aria-hidden="true"></i>
+                  </button>
+                  <button class="btn btn-outline btn-sm d-lg-none" type="button" data-new-chat>
+                    <i class="fa-solid fa-plus" aria-hidden="true"></i>
+                    New
+                  </button>
+                </header>
+
+                <div class="chat-scroll">
+                  <div class="chat-thread scrollbar-slim" data-thread>
+                    <div class="chat-empty">
+                      <span class="empty-state-icon"><i class="fa-solid fa-robot" aria-hidden="true"></i></span>
+                      <h2>Ask anything about your applications</h2>
+                      <p class="text-muted-fg">
+                        It can see what you have uploaded, which jobs you match and what is closing soon.
+                      </p>
+                      <div class="chat-suggestions">
+                        <button class="btn btn-outline btn-sm" type="button" data-ask="Naaku ye jobs match avthayi ra?">
+                          Naaku ye jobs match avthayi ra?
+                        </button>
+                        <button class="btn btn-outline btn-sm" type="button" data-ask="Which of my documents still need review?">
+                          Which documents still need review?
+                        </button>
+                        <button class="btn btn-outline btn-sm" type="button" data-ask="What is closing in the next 7 days?">
+                          What is closing this week?
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <button class="btn btn-outline btn-sm chat-jump" type="button" data-jump hidden>
+                    <i class="fa-solid fa-arrow-down" aria-hidden="true"></i>
+                    Latest
+                  </button>
+                </div>
+
+                <form class="chat-composer" data-composer>
+                  <div class="chat-composer-row">
+                    <textarea class="form-control" data-input rows="1" maxlength="4000"
+                              placeholder="Ask about a job or a document…"
+                              aria-label="Your message"></textarea>
+                    <button class="btn btn-primary btn-icon" type="submit" data-send aria-label="Send">
+                      <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </form>
+              </section>
+            </div>
+          </div>
+        </main>
+      </div>
+
+    <nav class="mobile-nav" aria-label="Sections">
+      <a href="dashboard.html"><i class="fa-solid fa-table-cells-large" aria-hidden="true"></i><span>Home</span></a>
+      <a href="jobs.html"><i class="fa-solid fa-briefcase" aria-hidden="true"></i><span>Jobs</span></a>
+      <a href="live.html"><i class="fa-solid fa-tower-broadcast" aria-hidden="true"></i><span>Live</span></a>
+      <a href="assistant.html" aria-current="page"><i class="fa-solid fa-robot" aria-hidden="true"></i><span>Assistant</span></a>
+      <a href="applications.html"><i class="fa-solid fa-file-lines" aria-hidden="true"></i><span>Applications</span></a>
+    </nav>
+    </div>
+
+    <script src="assets/vendor/bootstrap.bundle.min.js"></script>
+    <script type="module" src="assets/js/core/ui.js"></script>
+    <script type="module" src="assets/js/pages/assistant.js"></script>
+  </body>
+</html>
